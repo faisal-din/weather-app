@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-container">
+        <h1>Weather App</h1>
+
+        <!-- search box -->
+        <div class="search-bar">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Enter the city"
+            spellcheck="false"
+          />
+          <button id="search-btn">
+            <img src="images/search.png" alt="" />
+          </button>
+        </div>
+
+        <!-- weather data -->
+        <div class="weather-data">
+          <div class="weather">
+            <div class="weather-icon">
+              <img src="images/image.webp" alt="" />
+            </div>
+            <div class="temp">0°C</div>
+            <div class="weather-cond">Weather Condition</div>
+          </div>
+          <div class="location">
+            <img src="images/location.png" />
+            Location
+          </div>
+
+          <div class="description">
+            <div class="col">
+              <img src="images/humidity.png" alt="" />
+              <div>
+                <p class="humidity">0%</p>
+                <p>Humidity</p>
+              </div>
+            </div>
+            <div class="col">
+              <img src="images/wind.png" alt="" />
+              <div>
+                <p class="wind-speed">0Km/hr</p>
+                <p>Wind Speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- error message -->
+
+        <div class="err-msg hidden">
+          <img src="images/error.png" alt="" />
+          <div class="error">No matching location found</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

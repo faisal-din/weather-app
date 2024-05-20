@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  text-align: center;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    hsla(205, 46%, 10%, 1) 0%,
+    hsla(191, 28%, 23%, 1) 50%,
+    hsla(207, 41%, 27%, 1) 100%
+  );
+}
+.weather-container {
+  background: linear-gradient(
+    90deg,
+    hsla(12, 89%, 89%, 1) 0%,
+    hsla(329, 82%, 76%, 1) 50%,
+    hsla(342, 95%, 78%, 1) 100%
+  );
+  width: 350px;
+  height: 450px;
+  padding: 5px 25px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px grey;
+}
+.search-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+#search-input {
+  border: 0;
+  outline: 0;
+  padding: 7px 10px;
+  margin-right: 5px;
+  font-size: 19px;
+  border-radius: 30px;
+  background: #ebfffc;
+}
+#search-btn {
+  border: 0;
+  outline: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #ebfffc;
+  cursor: pointer;
+}
+#search-btn img {
+  width: 16px;
+}
+.weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.weather-icon {
+  width: 60px;
+  height: 60px;
+  background: #ebfffc;
+  border-radius: 50%;
+  margin: 10px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.temp {
+  font-size: 45px;
+  font-weight: 600;
+}
+.weather-cond {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.location {
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.location img {
+  width: 20px;
+  height: 20px;
+}
+.description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: -1 10px;
+  margin-top: 40px;
+}
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.col img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.humidity,
+.wind-speed {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: -6;
+}
+
+/* Error message  */
+
+.err-msg {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.err-msg img {
+  width: 60px;
+  height: 60px;
+  padding: 5px 10px;
+  object-fit: contain;
+}
+.error {
+  font-size: 30px;
+  font-weight: 600;
+}
+.hidden {
+  display: none;
+}

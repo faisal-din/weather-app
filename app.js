@@ -1,6 +1,7 @@
 const apiKey = '51df19a00fmsh524d9de0219ac7dp12fba3jsn8cad447812bc';
 const baseURL = 'https://weatherapi-com.p.rapidapi.com/current.json';
 
+
 let weatherData = document.querySelector('.weather-data');
 let errorMsg = document.querySelector('.err-msg');
 let searchInput = document.querySelector('#search-input');
